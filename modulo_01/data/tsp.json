@@ -1,0 +1,15 @@
+{
+    "instancia_exemplo": {
+        "nome": "triangulo",
+        "cidades": [
+            {"id": "A", "x": 0, "y": 0},
+            {"id": "B", "x": 4, "y": 0},
+            {"id": "C", "x": 0, "y": 3}
+        ],
+        "distancias": {
+            "A-B": 4,
+            "B-C": 5,
+            "C-A": 3
+        }
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "instancia_exemplo": {
+        "capacidade_mochila": 50,
+        "itens": [
+            {"id": 1, "valor": 60, "peso": 10},
+            {"id": 2, "valor": 100, "peso": 20},
+            {"id": 3, "valor": 120, "peso": 30}
+        ]
+    }
+}
