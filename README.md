@@ -2,7 +2,7 @@
 
 Este repositório contém o material de treinamento para novos membros da equipe, focado em modelagem matemática e resolução de problemas complexos usando Python e a biblioteca PuLP.
 
-![Resumo da Área de Otimização](modulo_01/img/summary.png)
+
 
 ## Estrutura do Repositório
 
