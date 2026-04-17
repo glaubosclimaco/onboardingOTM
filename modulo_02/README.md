@@ -16,6 +16,11 @@ Bem-vindo ao segundo módulo! Após dominarmos os métodos exatos no Módulo 01,
 - Otimização de rotas com o algoritmo 2-opt.
 - Escapando de ótimos locais (Introdução).
 
+### [Aula 03: Iterated Local Search (ILS)](aula_03_ils.ipynb)
+- O Framework do ILS: Perturbação e Busca Local.
+- Força da perturbação: Random Restart vs. Ótimos Locais.
+- Implementação prática e evolução da solução.
+
 ## Próximos Tópicos (Planejados)
 - Metaheurísticas de Busca Local (Hill Climbing, Simulated Annealing).
 - Algoritmos Evolutivos (Algoritmos Genéticos).

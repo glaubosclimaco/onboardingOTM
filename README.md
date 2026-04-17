@@ -1,6 +1,6 @@
 # Onboarding OTM: Pesquisa Operacional e Otimização
 
-Este repositório contém um material de treinamento para iniciantes em otimização combinatória, focado em modelagem matemática e resolução de problemas complexos usando Python e a biblioteca PuLP.
+Este repositório contém o material de treinamento para novos membros da equipe, focado em modelagem matemática e resolução de problemas complexos usando Python e a biblioteca PuLP.
 
 ![Resumo da Área de Otimização](modulo_01/img/summary.png)
 
@@ -17,6 +17,7 @@ Este módulo cobre os pilares da Pesquisa Operacional:
 Focado em agilidade para problemas de larga escala:
 1.  **Aula 01**: Algoritmos Gulosos.
 2.  **Aula 02**: Heurísticas de Busca Local (Hill Climbing, 2-opt).
+3.  **Aula 03**: Iterated Local Search (ILS).
 
 ## Pré-requisitos
 - Python 3.x
