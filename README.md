@@ -1,6 +1,6 @@
 # Onboarding OTM: Pesquisa Operacional e Otimização
 
-Este repositório contém o material de treinamento para novos membros da equipe, focado em modelagem matemática e resolução de problemas complexos usando Python e a biblioteca PuLP.
+Este repositório contém um material de treinamento para iniciantes em otimização combinatória, focado em modelagem matemática e resolução de problemas complexos usando Python e a biblioteca PuLP.
 
 ![Resumo da Área de Otimização](modulo_01/img/summary.png)
 
