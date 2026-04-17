@@ -16,6 +16,7 @@ Este módulo cobre os pilares da Pesquisa Operacional:
 ### [Módulo 02: Métodos Aproximados (Heurísticas)](modulo_02/)
 Focado em agilidade para problemas de larga escala:
 1.  **Aula 01**: Algoritmos Gulosos.
+2.  **Aula 02**: Heurísticas de Busca Local (Hill Climbing, 2-opt).
 
 ## Pré-requisitos
 - Python 3.x
