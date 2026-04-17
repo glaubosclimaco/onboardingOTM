@@ -1,0 +1,62 @@
+<svg width="680" height="320" xmlns="http://www.w3.org/2000/svg" role="img">
+ <title>Teoria de Filas — modelo M/M/s com chegadas e serviços</title>
+ <desc>Diagrama de filas mostrando processo de chegada Poisson, fila de espera e servidores paralelos.</desc>
+ <defs>
+  <marker orient="auto-start-reverse" markerHeight="6" markerWidth="6" refY="5" refX="8" viewBox="0 0 10 10" id="arr">
+   <path id="svg_1" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="context-stroke" fill="none" d="m2,1l6,4l-6,4"/>
+  </marker>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <rect id="svg_2" stroke-width="1px" stroke="rgb(175, 169, 236)" fill="rgb(238, 237, 254)" rx="8" height="160" width="110" y="34" x="37"/>
+  <text id="svg_3" stroke-width="1px" fill="rgb(60, 52, 137)" text-anchor="middle" y="56" x="92" font-weight="500" font-size="12px" font-family="sans-serif">chegadas</text>
+  <text id="svg_4" font-weight="400" stroke-width="1px" fill="rgb(83, 74, 183)" text-anchor="middle" y="72" x="92" font-size="11px" font-family="sans-serif">processo</text>
+  <text id="svg_5" font-weight="400" stroke-width="1px" fill="rgb(83, 74, 183)" text-anchor="middle" y="86" x="92" font-size="11px" font-family="sans-serif">de Poisson</text>
+  <text id="svg_6" stroke-width="1px" fill="rgb(60, 52, 137)" text-anchor="middle" y="119" x="92" font-weight="500" font-size="18px" font-family="sans-serif">λ</text>
+  <text id="svg_7" font-weight="400" stroke-width="1px" fill="rgb(83, 74, 183)" text-anchor="middle" y="139" x="92" font-size="11px" font-family="sans-serif">taxa média</text>
+  <text id="svg_8" font-weight="400" stroke-width="1px" fill="rgb(83, 74, 183)" text-anchor="middle" y="153" x="92" font-size="11px" font-family="sans-serif">de chegada</text>
+  <circle id="svg_9" stroke-width="1px" stroke="rgb(83, 74, 183)" fill="rgb(127, 119, 221)" r="7" cy="174" cx="65"/>
+  <circle id="svg_10" stroke-width="1px" stroke="rgb(83, 74, 183)" fill="rgb(127, 119, 221)" r="7" cy="174" cx="85"/>
+  <circle id="svg_11" stroke-width="1px" stroke="rgb(83, 74, 183)" fill="rgb(127, 119, 221)" r="7" cy="174" cx="105"/>
+  <circle id="svg_12" fill-opacity="0.6" stroke-width="1px" stroke="rgb(83, 74, 183)" fill="rgb(175, 169, 236)" r="7" cy="174" cx="125"/>
+  <line id="svg_13" fill="rgb(0, 0, 0)" marker-end="url(#arr)" stroke-width="1.5px" stroke="rgb(68, 68, 65)" y2="114" x2="189" y1="114" x1="147"/>
+  <rect id="svg_14" stroke-width="1px" stroke="rgb(136, 135, 128)" fill="rgb(241, 239, 232)" rx="8" height="140" width="170" y="44" x="189"/>
+  <text id="svg_15" stroke-width="1px" fill="rgb(44, 44, 42)" text-anchor="middle" y="66" x="274" font-weight="500" font-size="12px" font-family="sans-serif">fila de espera</text>
+  <rect id="svg_16" stroke-width="0.8px" stroke="rgb(136, 135, 128)" fill="rgb(211, 209, 199)" rx="3" height="36" width="28" y="76" x="203"/>
+  <rect id="svg_17" stroke-width="0.8px" stroke="rgb(136, 135, 128)" fill="rgb(211, 209, 199)" rx="3" height="36" width="28" y="76" x="235"/>
+  <rect id="svg_18" stroke-width="0.8px" stroke="rgb(136, 135, 128)" fill="rgb(211, 209, 199)" rx="3" height="36" width="28" y="76" x="267"/>
+  <rect id="svg_19" fill-opacity="0.6" stroke-width="0.8px" stroke="rgb(136, 135, 128)" fill="rgb(180, 178, 169)" rx="3" height="36" width="28" y="76" x="299"/>
+  <rect id="svg_20" stroke-dasharray="3px, 2px" fill-opacity="0.3" stroke-width="0.8px" stroke="rgb(136, 135, 128)" fill="rgb(180, 178, 169)" rx="3" height="36" width="16" y="76" x="331"/>
+  <circle id="svg_21" stroke-width="1px" stroke="rgb(95, 94, 90)" fill="rgb(136, 135, 128)" r="9" cy="94" cx="217"/>
+  <circle id="svg_22" stroke-width="1px" stroke="rgb(95, 94, 90)" fill="rgb(136, 135, 128)" r="9" cy="94" cx="249"/>
+  <circle id="svg_23" stroke-width="1px" stroke="rgb(95, 94, 90)" fill="rgb(136, 135, 128)" r="9" cy="94" cx="281"/>
+  <circle id="svg_24" stroke-width="1px" stroke="rgb(136, 135, 128)" fill="rgb(180, 178, 169)" r="7" cy="94" cx="313"/>
+  <text id="svg_25" font-weight="400" stroke-width="1px" fill="rgb(95, 94, 90)" text-anchor="middle" y="129" x="274" font-size="10px" font-family="sans-serif">Wq — tempo de espera</text>
+  <text id="svg_26" font-weight="400" stroke-width="1px" fill="rgb(95, 94, 90)" text-anchor="middle" y="144" x="274" font-size="10px" font-family="sans-serif">Lq — clientes na fila</text>
+  <text id="svg_27" font-weight="400" stroke-width="1px" fill="rgb(95, 94, 90)" text-anchor="middle" y="159" x="274" font-size="10px" font-family="sans-serif">capacidade K (finita ou ∞)</text>
+  <text id="svg_28" font-weight="400" stroke-width="1px" fill="rgb(95, 94, 90)" text-anchor="middle" y="174" x="274" font-size="10px" font-family="sans-serif">FIFO / LIFO / prioridade</text>
+  <line id="svg_29" fill="rgb(0, 0, 0)" marker-end="url(#arr)" stroke-width="1.5px" stroke="rgb(68, 68, 65)" y2="54" x2="399" y1="84" x1="359"/>
+  <line id="svg_30" fill="rgb(0, 0, 0)" marker-end="url(#arr)" stroke-width="1.5px" stroke="rgb(68, 68, 65)" y2="114" x2="399" y1="114" x1="359"/>
+  <line id="svg_31" fill="rgb(0, 0, 0)" marker-end="url(#arr)" stroke-width="1.5px" stroke="rgb(68, 68, 65)" y2="174" x2="399" y1="144" x1="359"/>
+  <rect id="svg_32" stroke-width="1.2px" stroke="rgb(93, 202, 165)" fill="rgb(225, 245, 238)" rx="8" height="64" width="120" y="22" x="399"/>
+  <text id="svg_33" stroke-width="1px" fill="rgb(8, 80, 65)" text-anchor="middle" y="44" x="459" font-weight="500" font-size="12px" font-family="sans-serif">servidor 1</text>
+  <text id="svg_34" stroke-width="1px" fill="rgb(15, 110, 86)" text-anchor="middle" y="70" x="459" font-weight="500" font-size="18px" font-family="sans-serif">μ₁</text>
+  <rect id="svg_35" stroke-width="1.2px" stroke="rgb(93, 202, 165)" fill="rgb(225, 245, 238)" rx="8" height="64" width="120" y="92" x="399"/>
+  <text id="svg_36" stroke-width="1px" fill="rgb(8, 80, 65)" text-anchor="middle" y="114" x="459" font-weight="500" font-size="12px" font-family="sans-serif">servidor 2</text>
+  <text id="svg_37" stroke-width="1px" fill="rgb(15, 110, 86)" text-anchor="middle" y="140" x="459" font-weight="500" font-size="18px" font-family="sans-serif">μ₂</text>
+  <rect id="svg_38" stroke-dasharray="5px, 3px" stroke-width="1.2px" stroke="rgb(29, 158, 117)" fill="rgb(225, 245, 238)" rx="8" height="64" width="120" y="162" x="399"/>
+  <text id="svg_39" stroke-width="1px" fill="rgb(15, 110, 86)" text-anchor="middle" y="184" x="459" font-weight="500" font-size="12px" font-family="sans-serif">servidor s</text>
+  <text id="svg_40" stroke-width="1px" fill="rgb(29, 158, 117)" text-anchor="middle" y="210" x="459" font-weight="500" font-size="18px" font-family="sans-serif">μₛ</text>
+  <text id="svg_41" font-weight="400" stroke-width="1px" fill="rgb(180, 178, 169)" text-anchor="middle" y="293" x="475" font-size="22px" font-family="sans-serif">⋮</text>
+  <line stroke="rgb(68, 68, 65)" id="svg_42" fill="rgb(0, 0, 0)" marker-end="url(#arr)" stroke-width="1.5px" y2="88" x2="588" y1="54" x1="519"/>
+  <line id="svg_43" fill="rgb(0, 0, 0)" marker-end="url(#arr)" stroke-width="1.5px" stroke="rgb(68, 68, 65)" y2="114" x2="589" y1="124" x1="519"/>
+  <line id="svg_44" fill="rgb(0, 0, 0)" marker-end="url(#arr)" stroke-width="1.5px" stroke="rgb(68, 68, 65)" y2="144" x2="589" y1="194" x1="519"/>
+  <rect id="svg_45" stroke-width="1px" stroke="rgb(151, 196, 89)" fill="rgb(234, 243, 222)" rx="8" height="56" width="72" y="87" x="586"/>
+  <text id="svg_46" stroke-width="1px" fill="rgb(39, 80, 10)" text-anchor="middle" y="110" x="622" font-weight="500" font-size="12px" font-family="sans-serif">saída</text>
+  <text id="svg_47" font-weight="400" stroke-width="1px" fill="rgb(59, 109, 17)" text-anchor="middle" y="126" x="622" font-size="10px" font-family="sans-serif">atendidos</text>
+  <text id="svg_48" font-weight="400" stroke-width="1px" fill="rgb(59, 109, 17)" text-anchor="middle" y="138" x="622" font-size="10px" font-family="sans-serif">taxa μ·s</text>
+  <rect id="svg_49" stroke-width="0.5px" stroke="rgb(250, 199, 117)" fill="rgb(250, 238, 218)" rx="6" height="44" width="590" y="265" x="53"/>
+  <text id="svg_50" stroke-width="1px" fill="rgb(99, 56, 6)" text-anchor="middle" y="284" x="348" font-weight="500" font-size="11px" font-family="sans-serif">fórmulas de Erlang — M/M/s:   ρ = λ/(s·μ)   L = Lq + λ/μ   W = L/λ   (Lei de Little)</text>
+  <text id="svg_51" font-weight="400" stroke-width="1px" fill="rgb(133, 79, 11)" text-anchor="middle" y="300" x="348" font-size="10px" font-family="sans-serif">teoria de filas — dimensionamento de sistemas com incerteza na demanda</text>
+ </g>
+</svg>

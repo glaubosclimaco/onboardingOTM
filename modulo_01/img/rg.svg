@@ -1,0 +1,88 @@
+<svg width="506" height="310" xmlns="http://www.w3.org/2000/svg" role="img">
+ <title>Teoria de Redes — fluxo em rede com caminho mínimo</title>
+ <desc>Grafo direcionado com nós fonte, intermediários e sorvedouro. Caminho mínimo destacado em laranja.</desc>
+ <defs>
+  <marker orient="auto-start-reverse" markerHeight="6" markerWidth="6" refY="5" refX="8" viewBox="0 0 10 10" id="arr">
+   <path id="svg_1" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="context-stroke" fill="none" d="m2,1l6,4l-6,4"/>
+  </marker>
+  <marker orient="auto-start-reverse" markerHeight="7" markerWidth="7" refY="5" refX="8" viewBox="0 0 10 10" id="arr2">
+   <path id="svg_2" stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" stroke="#D85A30" fill="none" d="m2,1l6,4l-6,4"/>
+  </marker>
+  <mask maskUnits="userSpaceOnUse" id="imagine-text-gaps-zkja09">
+   <rect id="svg_3" fill="white" height="340" width="680" y="0" x="0"/>
+   <rect id="svg_4" rx="2" fill="black" height="15.33333" width="13.56337" y="103.02778" x="149.21832"/>
+   <rect id="svg_5" rx="2" fill="black" height="15.33333" width="13.56337" y="205.02779" x="149.21832"/>
+   <rect id="svg_6" rx="2" fill="black" height="15.33333" width="13.56337" y="76.02778" x="281.21832"/>
+   <rect id="svg_7" rx="2" fill="black" height="15.33333" width="13.56337" y="245.02779" x="281.21832"/>
+   <rect id="svg_8" rx="2" fill="black" height="15.33333" width="13.56337" y="144.02779" x="265.21832"/>
+   <rect id="svg_9" rx="2" fill="black" height="15.33333" width="13.56337" y="175.02779" x="291.21832"/>
+   <rect id="svg_10" rx="2" fill="black" height="15.33333" width="13.56337" y="161.02779" x="333.21832"/>
+   <rect id="svg_11" rx="2" fill="black" height="15.33333" width="13.56337" y="131.02779" x="399.21832"/>
+   <rect id="svg_12" rx="2" fill="black" height="15.33333" width="13.56337" y="211.02779" x="399.21832"/>
+   <rect id="svg_13" rx="2" fill="black" height="15.33333" width="13.56337" y="151.02779" x="503.21829"/>
+   <rect id="svg_14" rx="2" fill="black" height="18.63889" width="16.6697" y="161.19444" x="91.66515"/>
+   <rect id="svg_15" rx="2" fill="black" height="18.16667" width="16.00564" y="86.66666" x="216.99718"/>
+   <rect id="svg_16" rx="2" fill="black" height="18.16667" width="16.00564" y="236.66667" x="216.99718"/>
+   <rect id="svg_17" rx="2" fill="black" height="18.16667" width="16.6697" y="86.66666" x="341.66516"/>
+   <rect id="svg_18" rx="2" fill="black" height="18.16667" width="16.6697" y="236.66667" x="341.66516"/>
+   <rect id="svg_19" rx="2" fill="black" height="18.16667" width="16.00564" y="161.66667" x="451.99719"/>
+   <rect id="svg_20" rx="2" fill="black" height="18.63889" width="15.93924" y="161.19444" x="562.0304"/>
+   <rect id="svg_21" rx="2" fill="black" height="15.33333" width="46.33854" y="32.02778" x="65.83074"/>
+   <rect id="svg_22" rx="2" fill="black" height="15.33333" width="73.01172" y="46.02778" x="52.49415"/>
+   <rect id="svg_23" rx="2" fill="black" height="15.33333" width="73.55772" y="32.02778" x="553.22119"/>
+   <rect id="svg_24" rx="2" fill="black" height="15.33333" width="71.36632" y="46.02778" x="554.31689"/>
+   <rect id="svg_25" rx="2" fill="black" height="16.27778" width="285.63715" y="295.08334" x="197.18147"/>
+   <rect id="svg_26" rx="2" fill="black" height="15.33333" width="333.02908" y="310.0278" x="173.48552"/>
+  </mask>
+ </defs>
+ <g>
+  <title>Layer 1</title>
+  <line id="svg_27" fill="rgb(0, 0, 0)" marker-end="url(#arr)" stroke-width="1.2px" stroke="rgb(180, 178, 169)" y2="86" x2="130" y1="154" x1="36"/>
+  <line id="svg_28" fill="rgb(0, 0, 0)" marker-end="url(#arr)" stroke-width="1.2px" stroke="rgb(180, 178, 169)" y2="222" x2="130" y1="154" x1="36"/>
+  <line id="svg_29" fill="rgb(0, 0, 0)" marker-end="url(#arr)" stroke-width="1.2px" stroke="rgb(180, 178, 169)" y2="79" x2="256" y1="79" x1="156"/>
+  <line id="svg_30" fill="rgb(0, 0, 0)" marker-end="url(#arr)" stroke-width="1.2px" stroke="rgb(180, 178, 169)" y2="229" x2="256" y1="229" x1="156"/>
+  <line id="svg_31" fill="rgb(0, 0, 0)" mask="url(#imagine-text-gaps-zkja09)" marker-end="url(#arr)" stroke-width="1.2px" stroke="rgb(180, 178, 169)" y2="212" x2="256" y1="96" x1="146"/>
+  <line id="svg_32" fill="rgb(0, 0, 0)" marker-end="url(#arr)" stroke-width="1.2px" stroke="rgb(180, 178, 169)" y2="96" x2="256" y1="212" x1="146"/>
+  <line id="svg_33" fill="rgb(0, 0, 0)" mask="url(#imagine-text-gaps-zkja09)" marker-end="url(#arr)" stroke-width="1.2px" stroke="rgb(180, 178, 169)" y2="146" x2="360" y1="79" x1="280"/>
+  <line id="svg_34" fill="rgb(0, 0, 0)" mask="url(#imagine-text-gaps-zkja09)" marker-end="url(#arr)" stroke-width="1.2px" stroke="rgb(180, 178, 169)" y2="162" x2="360" y1="229" x1="280"/>
+  <line id="svg_35" fill="rgb(0, 0, 0)" mask="url(#imagine-text-gaps-zkja09)" marker-end="url(#arr)" stroke-width="1.2px" stroke="rgb(180, 178, 169)" y2="212" x2="256" y1="86" x1="256"/>
+  <line id="svg_36" fill="rgb(0, 0, 0)" mask="url(#imagine-text-gaps-zkja09)" marker-end="url(#arr)" stroke-width="1.2px" stroke="rgb(180, 178, 169)" y2="154" x2="470" y1="154" x1="384"/>
+  <line id="svg_37" fill="rgb(0, 0, 0)" opacity="0.9" marker-end="url(#arr2)" stroke-width="3px" stroke="rgb(216, 90, 48)" y2="222" x2="130" y1="154" x1="36"/>
+  <line id="svg_38" fill="rgb(0, 0, 0)" opacity="0.9" marker-end="url(#arr2)" stroke-width="3px" stroke="rgb(216, 90, 48)" y2="96" x2="256" y1="212" x1="146"/>
+  <line id="svg_39" fill="rgb(0, 0, 0)" mask="url(#imagine-text-gaps-zkja09)" opacity="0.9" marker-end="url(#arr2)" stroke-width="3px" stroke="rgb(216, 90, 48)" y2="146" x2="360" y1="79" x1="280"/>
+  <line id="svg_40" fill="rgb(0, 0, 0)" mask="url(#imagine-text-gaps-zkja09)" opacity="0.9" marker-end="url(#arr2)" stroke-width="3px" stroke="rgb(216, 90, 48)" y2="154" x2="470" y1="154" x1="384"/>
+  <text id="svg_41" font-weight="400" stroke-width="1px" text-anchor="middle" fill="rgb(95, 94, 90)" y="98" x="74" font-size="10px" font-family="sans-serif">4</text>
+  <text id="svg_42" font-weight="400" stroke-width="1px" text-anchor="middle" fill="rgb(95, 94, 90)" y="200" x="74" font-size="10px" font-family="sans-serif">7</text>
+  <text id="svg_43" font-weight="400" stroke-width="1px" text-anchor="middle" fill="rgb(95, 94, 90)" y="71" x="206" font-size="10px" font-family="sans-serif">3</text>
+  <text id="svg_44" font-weight="400" stroke-width="1px" text-anchor="middle" fill="rgb(95, 94, 90)" y="240" x="206" font-size="10px" font-family="sans-serif">6</text>
+  <text id="svg_45" font-weight="400" stroke-width="1px" text-anchor="middle" fill="rgb(95, 94, 90)" y="139" x="190" font-size="10px" font-family="sans-serif">2</text>
+  <text id="svg_46" font-weight="400" stroke-width="1px" text-anchor="middle" fill="rgb(95, 94, 90)" y="170" x="216" font-size="10px" font-family="sans-serif">5</text>
+  <text id="svg_47" font-weight="400" stroke-width="1px" text-anchor="middle" fill="rgb(95, 94, 90)" y="156" x="258" font-size="10px" font-family="sans-serif">8</text>
+  <text id="svg_48" font-weight="400" stroke-width="1px" text-anchor="middle" fill="rgb(95, 94, 90)" y="126" x="324" font-size="10px" font-family="sans-serif">3</text>
+  <text id="svg_49" font-weight="400" stroke-width="1px" text-anchor="middle" fill="rgb(95, 94, 90)" y="206" x="324" font-size="10px" font-family="sans-serif">4</text>
+  <text id="svg_50" font-weight="400" stroke-width="1px" text-anchor="middle" fill="rgb(95, 94, 90)" y="146" x="428" font-size="10px" font-family="sans-serif">1</text>
+  <circle id="svg_51" stroke-width="1.5px" stroke="rgb(55, 138, 221)" fill="rgb(230, 241, 251)" r="18" cy="154" cx="18"/>
+  <text id="svg_52" stroke-width="1px" fill="rgb(12, 68, 124)" text-anchor="middle" y="159" x="18" font-weight="500" font-size="13px" font-family="sans-serif">S</text>
+  <circle id="svg_53" stroke-width="1px" stroke="rgb(136, 135, 128)" fill="rgb(241, 239, 232)" r="18" cy="79" cx="143"/>
+  <text id="svg_54" stroke-width="1px" fill="rgb(68, 68, 65)" text-anchor="middle" y="84" x="143" font-weight="500" font-size="12px" font-family="sans-serif">A</text>
+  <circle id="svg_55" stroke-width="2px" stroke="rgb(216, 90, 48)" fill="rgb(250, 236, 231)" r="18" cy="229" cx="143"/>
+  <text id="svg_56" stroke-width="1px" fill="rgb(153, 60, 29)" text-anchor="middle" y="234" x="143" font-weight="500" font-size="12px" font-family="sans-serif">B</text>
+  <circle id="svg_57" stroke-width="2px" stroke="rgb(216, 90, 48)" fill="rgb(250, 236, 231)" r="18" cy="79" cx="268"/>
+  <text id="svg_58" stroke-width="1px" fill="rgb(153, 60, 29)" text-anchor="middle" y="84" x="268" font-weight="500" font-size="12px" font-family="sans-serif">C</text>
+  <circle id="svg_59" stroke-width="1px" stroke="rgb(136, 135, 128)" fill="rgb(241, 239, 232)" r="18" cy="229" cx="268"/>
+  <text id="svg_60" stroke-width="1px" fill="rgb(68, 68, 65)" text-anchor="middle" y="234" x="268" font-weight="500" font-size="12px" font-family="sans-serif">D</text>
+  <circle id="svg_61" stroke-width="2px" stroke="rgb(216, 90, 48)" fill="rgb(250, 236, 231)" r="18" cy="154" cx="378"/>
+  <text id="svg_62" stroke-width="1px" fill="rgb(153, 60, 29)" text-anchor="middle" y="159" x="378" font-weight="500" font-size="12px" font-family="sans-serif">E</text>
+  <circle id="svg_63" stroke-width="1.5px" stroke="rgb(55, 138, 221)" fill="rgb(230, 241, 251)" r="18" cy="154" cx="488"/>
+  <text id="svg_64" stroke-width="1px" fill="rgb(12, 68, 124)" text-anchor="middle" y="159" x="488" font-weight="500" font-size="13px" font-family="sans-serif">T</text>
+  <rect id="svg_65" stroke-width="0.5px" stroke="rgb(181, 212, 244)" fill="rgb(230, 241, 251)" rx="6" height="36" width="90" y="0" x="3"/>
+  <text id="svg_66" stroke-width="1px" fill="rgb(12, 68, 124)" text-anchor="middle" y="15" x="48" font-weight="500" font-size="10px" font-family="sans-serif">origem(S)</text>
+  <text id="svg_67" font-weight="400" stroke-width="1px" fill="rgb(24, 95, 165)" text-anchor="middle" y="29" x="48" font-size="10px" font-family="sans-serif">oferta ilimitada</text>
+  <rect id="svg_68" stroke-width="0.5px" stroke="rgb(181, 212, 244)" fill="rgb(230, 241, 251)" rx="6" height="36" width="92" y="4" x="376"/>
+  <text id="svg_69" stroke-width="1px" fill="rgb(12, 68, 124)" text-anchor="middle" y="19" x="422" font-weight="500" font-size="10px" font-family="sans-serif">destino (T)</text>
+  <text id="svg_70" font-weight="400" stroke-width="1px" fill="rgb(24, 95, 165)" text-anchor="middle" y="33" x="422" font-size="10px" font-family="sans-serif">demanda total</text>
+  <rect stroke="rgb(245, 196, 179)" id="svg_71" stroke-width="0.5px" fill="rgb(250, 236, 231)" rx="6" height="36" width="333.99999" y="274" x="92.99999"/>
+  <text id="svg_72" stroke-width="1px" fill="rgb(153, 60, 29)" text-anchor="middle" y="291" x="258" font-weight="500" font-size="11px" font-family="sans-serif">caminho mínimo: S→B→C→E→T  custo = 7+2+3+1 = 13</text>
+  <text id="svg_73" font-weight="400" stroke-width="1px" fill="rgb(113, 43, 19)" text-anchor="middle" y="305" x="258" font-size="10px" font-family="sans-serif">teoria de redes — problema do caminho mínimo (Dijkstra / Bellman-Ford)</text>
+ </g>
+</svg>
