@@ -2,7 +2,14 @@
 
 Este repositório contém o material de treinamento para novos membros da equipe, focado em modelagem matemática e resolução de problemas complexos usando Python e a biblioteca PuLP.
 
-
+<div align="center\">
+  <img src="modulo_01/img/summary.png" width="800px" />
+  <div style="display: flex; justify-content: space-around; margin-top: 20px;">
+    <img src="modulo_01/img/pl2.png" width="45%" height="300px" style="object-fit: cover; border-radius: 8px;" />
+    <img src="modulo_01/img/sp.png" width="45%" height="300px" style="object-fit: cover; border-radius: 8px;" />
+  </div>
+  <p><i>Visualizações de modelos de Programação Linear e Teoria de Redes.</i></p>
+</div>
 
 ## Estrutura do Repositório
 
